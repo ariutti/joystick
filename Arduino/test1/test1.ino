@@ -5,11 +5,11 @@
 // signals from a joystick
 // and a push button
 
-#define LEFT   2
-#define RIGHT  3
+#define LEFT   5
+#define RIGHT  6
 #define DOWN   4
-#define UP     5
-#define PUSH   6
+#define UP     3
+#define PUSH   2
 
 ButtonDebounce left(  LEFT,  50 );
 ButtonDebounce right( RIGHT, 50 );
@@ -77,4 +77,3 @@ void printStates()
   Serial.print( !push.state() );
   Serial.println(";");
 }
-
